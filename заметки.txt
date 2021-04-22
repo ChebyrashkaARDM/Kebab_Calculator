@@ -1,0 +1,72 @@
+def schitat():
+    global a, b, c, d, e
+    try:
+        a = int(EntryA.get())
+        b = int(EntryB.get())
+        c = int(EntryC.get())
+        d = int(EntryD.get())
+        e = int(EntryE.get())
+    except ValueError:
+        mb.showerror('Ошибка', "Вводите целые числа!")
+        EntryA.delete(0, END)
+        EntryB.delete(0, END)
+        EntryC.delete(0, END)
+        EntryD.delete(0, END)
+        EntryE.delete(0, END)
+
+
+
+
+
+var1 = BooleanVar()
+var1.set(0)
+c1 = Checkbutton(frame, text="First",
+                 variable=var1,
+                 onvalue=1, offvalue=0,
+                 command=show)
+c1.pack(anchor=W, padx=10)
+
+var2 = IntVar()
+var2.set(-1)
+c2 = Checkbutton(frame, text="Second",
+                 variable=var2,
+                 onvalue=1, offvalue=0,
+                 command=show)
+
+
+
+
+
+
+
+
+
+
+
+def manmax():
+    global a, A, colA
+    a = int(EntryA.get())
+    colA = A * a
+
+
+def manmin():
+    global b, B, colB
+    b = int(EntryB.get())
+    colB = B * b
+
+
+def womanmax():
+    global c, C, colC
+    c = int(EntryC.get())
+    colC = C * c
+
+def womanmin():
+    global d, D, colD
+    d = int(EntryD.get())
+    colD = D * d
+
+
+def children():
+    global e, E, colE
+    e = int(EntryE.get())
+    colE = E * e
